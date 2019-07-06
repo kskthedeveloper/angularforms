@@ -1,0 +1,13 @@
+<form>
+  <div class="form-group">
+    <input type="text" class="form-control" id="id" required [(ngModel)]="product.id" name="id">
+    <br>
+    <input type="text" class="form-control" id="name" [(ngModel)]="product.name" name="name" required>
+    <br>
+    <input type="text" class="form-control" id="price" [(ngModel)]="product.price" name="price" required>
+    <br>
+    <input type="text" class="form-control" id="quanity" [(ngModel)]="product.quanity" name="quanity" required>
+  </div>
+</form>
+
+{{product | json}}
